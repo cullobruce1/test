@@ -3,72 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cullo Phones Shop and Accessories</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>AI Q&A Web App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Cullo Phones Shop and Accessories</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Welcome to Cullos!</h2>
-            <p>Your one-stop shop for the latest phones and accessories.</p>
-        </section>
-        <section id="products">
-            <h2>Our Products</h2>
-            <div class="product">
-                <img src="phone1.jpg" alt="Phone Model 1">
-                <h3>Phone Model 1</h3>
-                <p>Description of Phone Model 1.</p>
-                <span class="price">$499.99</span>
-                <button class="buy-button" data-product="Phone Model 1" data-price="499.99">Buy Now</button>
-            </div>
-            <div class="product">
-                <img src="phone2.jpg" alt="Phone Model 2">
-                <h3>Phone Model 2</h3>
-                <p>Description of Phone Model 2.</p>
-                <span class="price">$599.99</span>
-                <button class="buy-button" data-product="Phone Model 2" data-price="599.99">Buy Now</button>
-            </div>
-            <div class="product">
-                <img src="accessory1.jpg" alt="Accessory Model 1">
-                <h3>Accessory Model 1</h3>
-                <p>Description of Accessory Model 1.</p>
-                <span class="price">$29.99</span>
-                <button class="buy-button" data-product="Accessory Model 1" data-price="29.99">Buy Now</button>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>For inquiries, please email us at <a href="mailto:info@cullo.com">info@cullo.com</a>.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Cullos Phones Shop</p>
-    </footer>
-    <div id="purchase-form" class="hidden">
-        <h2>Purchase</h2>
-        <form id="form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="product">Product:</label>
-            <input type="text" id="product" readonly>
-            <label for="price">Price:</label>
-            <input type="text" id="price" readonly>
-            <button type="submit">Confirm Purchase</button>
-            <button type="button" id="cancel">Cancel</button>
+    <div class="container">
+        <h1>AI Q&A App</h1>
+        <div class="chatbox">
+            <div id="messages"></div>
+        </div>
+        <form id="questionForm">
+            <input type="text" id="userInput" placeholder="Ask me anything..." required />
+            <button type="submit">Send</button>
         </form>
     </div>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
